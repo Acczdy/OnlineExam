@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 
-// 使用 FILTER_DEFAULT 替代弃用的 FILTER_SANITIZE_STRING
+
 $type = filter_input(INPUT_POST, 'type', FILTER_DEFAULT);
 $mode = filter_input(INPUT_POST, 'mode', FILTER_DEFAULT);
 $current_page = filter_input(INPUT_POST, 'page', FILTER_VALIDATE_INT) ?? 1;
